@@ -2,11 +2,15 @@
 laravel框架的生成静态页的扩展包
 
 根据缓冲技术生成静态页
+
 部署此类网站，需前后台分离，即两个域名/ip分别指向前台和后台
+
 后台域名/ip指向laravel框架的public目录
+
 前台域名/ip指向laravel框架的public目录下的指定目录【该目录名称可以在配置文件中设置】
 
 在网站中使用该扩展，请按照如下步骤使用：
+
 1. 使用`composer require caijw/laravel-generate-html`下载该扩展
 2. 在config/app.php的providers数组中加入以下语句：`caijw\Generate\GenerateServiceProvider::class`注册服务提供者
 3. 在项目根目录使用`php artisan vendor:publish --force`，将配置文件copy到config目录下
